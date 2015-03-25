@@ -155,6 +155,7 @@ body {
     position: fixed;
     bottom: 0px;
     left: 0;
+<<<<<<< HEAD
 }
 
 #footer p
@@ -164,4 +165,7 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
     display: block;
+=======
+    display: none;
+>>>>>>> 06a8479b344f378bad254340e737be291ce0b9ed
 }
