@@ -72,7 +72,7 @@ body {
 .bubble:hover
 {
     margin-top: 42px;
-    border-width: 3px;
+    border-width: 5px;
 }
 
 .overlay
