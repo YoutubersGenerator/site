@@ -53,6 +53,13 @@ body {
     margin: auto;
 }
 
+#return
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
  .bubble
 {
     width: 200px;
@@ -61,7 +68,7 @@ body {
     margin: 40px 40px 20px 40px;
     border-radius: 100px/100px;
     border-style: solid;
-    border-color: black;
+    border-color: #CFC8BA;
     border-width: 7px;
     border-top: 0px;
     border-left: 0px;
@@ -72,7 +79,7 @@ body {
 .bubble:hover
 {
     margin-top: 42px;
-    border-width: 3px;
+    border-width: 5px;
 }
 
 .overlay
