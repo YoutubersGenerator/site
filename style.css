@@ -1,0 +1,146 @@
+header img
+{
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+	margin: 0; padding: 0; /* annulation des marges */
+	overflow: hidden; /* on cache le débordement de contenu */
+	color: #fff;
+	background: #000;
+}
+
+#bandeau
+{
+    position: fixed;
+    bottom: 5%;
+    left: 0px;
+}
+
+#wrap {
+	/* position du conteneur pour le préparer à bouger */
+	position: relative;
+	top: 0;
+	/* on prépare la transition à venir */
+	transition: top 1.4s cubic-bezier(.49,.22,.52,1.35);
+}
+ 
+#nav img
+{
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    z-index: 1;
+    width: 200px;
+}
+
+/*#nav a {
+	 on prévoit une petite transition (lueur) 
+	transition: all 1s;
+}*/
+
+#content
+{
+    width: 90%;
+    margin: auto;
+    
+}
+
+#contentBubble
+{
+    width:  1120px;
+    margin: auto;
+}
+
+ .bubble
+{
+    width: 200px;
+    float: left;
+    overflow: hidden;
+    margin: 40px 40px 20px 40px;
+    border-radius: 100px/100px;
+    border-style: solid;
+    border-color: black;
+    border-width: 7px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    height: 200px;
+}
+
+.bubble:hover
+{
+    margin-top: 42px;
+    border-width: 3px;
+}
+
+.overlay
+{
+    background: rgba(199,0,0,.75);
+    text-align: center;
+    height: 295px;
+    width: 295px;
+    margin: 0!important;
+    opacity: 0;
+    -webkit-transition: opacity .45s ease;
+    max-height: 295px;
+    vertical-align: top;
+    display: -moz-inline-stack;
+    zoom: 1;
+}
+
+.overlay:hover
+{
+    opacity: 1;
+}
+
+/* slides */
+#slide1, #slide2 {
+	/* height à adapter avec media queries */
+	height: 1000px;
+	padding-top:100px;
+	/* préparation des transitions */
+	transition: background-position 1.4s  cubic-bezier(.49,.22,.52,1.35);
+}
+/* attribution des images de fond */
+#slide1 
+{ 
+    background:url(img/fond/connasse.jpg) center 0 no-repeat fixed; 
+    background-size: 100%;
+}
+
+#slide2 
+{ 
+    background: url(img/fond/background.png) center 0 fixed; 
+}
+ 
+/* Contenus des slides */
+.slide_inside {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;    
+}
+
+#slide1 .slide_inside {
+	text-align: center;
+	background-color: transparent;
+}
+#slide2 .slide_inside p {
+	width: 500px;
+	text-align: justify;
+}
+
+/* décalage du conteneur vers le haut */
+#s2:target ~ #wrap {
+	top:-1200px;
+}
+ 
+/* décalage des fonds de chaque slide */
+#s2:target ~ #wrap #slide1 { background-position: 50% 36%; }
+#s2:target ~ #wrap #slide2 { background-position: 50% 0%; }
+
+#footer
+{
+    
+}
