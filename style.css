@@ -155,4 +155,5 @@ body {
     position: fixed;
     bottom: 0px;
     left: 0;
+    display: none;
 }
