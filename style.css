@@ -156,3 +156,12 @@ body {
     bottom: 0px;
     left: 0;
 }
+
+#footer p
+{
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+}
