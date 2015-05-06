@@ -53,7 +53,7 @@
                                 <a href='audio/bob/bob_1.mp3'><img src="img/old/BobLennon.png"/></a>
                             </div>
                             <div class="bubble">
-                                <a href='audio/con/con_1.mp3'><img src="img/old/Connasse.jpg"/></a>
+                                <a href='audio/cos/cos_1.mp3'><img src="img/old/Connasse.jpg"/></a>
                             </div>
                             <div class="bubble">
                                 <a href='audio/cyp/cyp_1.mp3'><img src="img/old/cyprien.png"/></a>
