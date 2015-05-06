@@ -66,11 +66,12 @@ body {
 #return
 {
     position: absolute;
-    top: -20px;
+    top: -5px;
     left: 0px;
 }
 
 #search{
+    margin-top: 5px;
     display: block;
     text-align: center;
     border
@@ -122,7 +123,7 @@ body {
 #slide1, #slide2 {
 	/* height à adapter avec media queries */
 	height: 1000px;
-	padding-top:110px;
+	padding-top:100px;
 	/* préparation des transitions */
 	transition: background-position 1.4s  cubic-bezier(.49,.22,.52,1.35);
 }
