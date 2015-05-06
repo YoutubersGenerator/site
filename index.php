@@ -29,12 +29,16 @@
                 <div class="slide_inside">
                     <div id="content">
                         <a href="#s1"><img src="img/return.png" alt="return" id="return"></a>
+                        <div id='search'>
+                            <input type ='text' name='research' placeholder='recherche'>
+                            <input type='submit' value='Rechercher'>
+                        </div>
                         <div id="contentBubble">
                             <div class="bubble">
                                 <a href='audio/slg/slg_1.mp3'><img src="img/old/SLG.jpg"/></a>
                             </div>
                             <div class="bubble">
-                                <a href='audio/andy/andy_1.mp3'><img src="img/old/andy.jpg"/></a>
+                                <a href='audio/mip/mip_1.mp3'><img src="img/old/andy.jpg"/></a>
                             </div>
                             <div class="bubble">
                                 <a href="audio/jdg/jdg_1.mp3"><img src="img/old/jdg.jpg"/></a>
@@ -43,13 +47,13 @@
                                 <a href='audio/ant/ant_1.mp3'><img src="img/old/antoine-daniel.jpg"/></a>
                             </div>
                             <div class="bubble">
-                                <a href='audio/benz/benz_1.mp3'><img src="img/old/benzai.png"/></a>
+                                <a href='audio/ben/ben_1.mp3'><img src="img/old/benzai.png"/></a>
                             </div>
                             <div class="bubble">
                                 <a href='audio/bob/bob_1.mp3'><img src="img/old/BobLennon.png"/></a>
                             </div>
                             <div class="bubble">
-                                <a href='audio/conn/conn_1.mp3'><img src="img/old/Connasse.jpg"/></a>
+                                <a href='audio/con/con_1.mp3'><img src="img/old/Connasse.jpg"/></a>
                             </div>
                             <div class="bubble">
                                 <a href='audio/cyp/cyp_1.mp3'><img src="img/old/cyprien.png"/></a>
