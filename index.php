@@ -38,7 +38,7 @@
                                 <a href='audio/slg/slg_1.mp3'><img src="img/old/SLG.jpg"/></a>
                             </div>
                             <div class="bubble">
-                                <a href='audio/mip/mip_1.mp3'><img src="img/old/andy.jpg"/></a>
+                                <a href='audio/mip/mip_1.mp3'><img src="img/old/mip.jpg"/></a>
                             </div>
                             <div class="bubble">
                                 <a href="audio/jdg/jdg_1.mp3"><img src="img/old/jdg.jpg"/></a>
@@ -59,7 +59,10 @@
                                 <a href='audio/cyp/cyp_1.mp3'><img src="img/old/cyprien.png"/></a>
                             </div>
                         </div>
-                        <div id="footer"><p>Copyright 2015 - La Benj et Amaïa Hiribarne</p></div>
+                        <div id="footer">
+                            <h3>Created by :</h3>
+                            <p>Benjamin Wagner et Amaïa Hiribarne. Tous droits réservés.</p>
+                        </div>
                     </div>                   
                 </div> <!-- /.slide_inside-->	     	
             </div> <!-- /#slide2 -->
