@@ -16,3 +16,12 @@ $(document).ready(function(){
         $('#footer').fadeOut("500");
     });
 });
+
+$('#test').click(function () {
+    document.getElementById('#audio').play();
+
+});
+
+$('#audio').on('ended', function() {
+  $('#audio').load();
+});
