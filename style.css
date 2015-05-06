@@ -18,7 +18,7 @@ body {
 	margin: 0; padding: 0; /* annulation des marges */
 	overflow: hidden; /* on cache le débordement de contenu */
 	color: #fff;
-	background: #000;
+	background: url(img/fond/background.png) center 0 fixed; 
 }
 
 #bandeau
@@ -162,6 +162,43 @@ body {
 /* décalage des fonds de chaque slide */
 #s2:target ~ #wrap #slide1 { background-position: 50% 36%; }
 #s2:target ~ #wrap #slide2 { background-position: 50% 0%; }
+
+
+#content2
+{
+    width: 90%;
+    margin: auto;
+    
+}
+
+#contentBubble2
+{
+    width:  620px;
+    height: 280px;
+    margin: auto;
+    border-top: 40px;
+    background: white;
+}
+
+#contentBubble2 p
+{
+    margin-top: 130px;
+    color: black;
+    font-family: 'geo';
+    padding-top: 100px;
+}
+
+.bubble2
+{
+    width: 200px;
+    float: left;
+    overflow: hidden;
+    margin: 40px 40px 20px 40px;
+    border-radius: 100px/100px;
+    border-style: solid;
+    border-color: #CFC8BA;
+    height: 200px;
+}
 
 #footer
 {
