@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'anti';
+    src: url(Antipasto_regular.otf);
+}
+
+@font-face {
+    font-family: 'geo';
+    src: url(GeosansLight.ttf);
+}
+
 header img
 {
     width: 100%;
@@ -150,20 +160,29 @@ body {
 #footer
 {
     width: 100%;
-    height: 30px;
+    height: 90px;
     background-color: black;
     position: fixed;
     bottom: 0px;
     left: 0;
-    display: none;
+    display: none;   
+}
+
+#footer h3
+{
+    margin-left: 45px;
+	font-family: 'anti';
+	text-decoration: underline;
 }
 
 #footer p
 {
+	font-family: 'geo';
+	vertical-align: middle;
     text-align: center;
     color: white;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 20px;
     display: block;
-    display: none;
 }

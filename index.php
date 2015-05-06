@@ -53,7 +53,10 @@
                                 <img src="img/old/cyprien.png"/>
                             </div>
                         </div>
-                        <div id="footer"><p>Copyright 2015 - La Benj et Amaïa Hiribarne</p></div>
+                        <div id="footer">
+                            <h3>Created by :</h3>
+                            <p>Benjamin Wagner et Amaïa Hiribarne. Tous droits réservés.</p>
+                        </div>
                     </div>                   
                 </div> <!-- /.slide_inside-->	     	
             </div> <!-- /#slide2 -->
