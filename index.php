@@ -6,6 +6,8 @@
         <title>Youtubers Generator !</title>
         <script src="jquery-2.1.3.min.js"></script>
         <script type="text/javascript" src="custom.js"></script>
+        <script type="text/javascript" src="soundmanager2.js"></script>
+        <script type="text/javascript" src="inlineplayer.js"></script>
     </head>
     <body>
         <span id="s1"></span>
@@ -29,28 +31,28 @@
                         <a href="#s1"><img src="img/return.png" alt="return" id="return"></a>
                         <div id="contentBubble">
                             <div class="bubble">
-                                <img src="img/old/SLG.jpg"/>
+                                <a href='audio/slg/slg_1.mp3'><img src="img/old/SLG.jpg"/></a>
                             </div>
                             <div class="bubble">
-                                <img src="img/old/andy.jpg"/>
+                                <a href='audio/andy/andy_1.mp3'><img src="img/old/andy.jpg"/></a>
                             </div>
                             <div class="bubble">
-                                <img src="img/old/jdg.jpg"/>
+                                <a href="audio/jdg/jdg_1.mp3"><img src="img/old/jdg.jpg"/></a>
                             </div>
                             <div class="bubble">
-                                <img src="img/old/antoine-daniel.jpg"/>
+                                <a href='audio/ant/ant_1.mp3'><img src="img/old/antoine-daniel.jpg"/></a>
                             </div>
                             <div class="bubble">
-                                <img src="img/old/benzai.png"/>
+                                <a href='audio/benz/benz_1.mp3'><img src="img/old/benzai.png"/></a>
                             </div>
                             <div class="bubble">
-                                <img src="img/old/BobLennon.png"/>
+                                <a href='audio/bob/bob_1.mp3'><img src="img/old/BobLennon.png"/></a>
                             </div>
                             <div class="bubble">
-                                <img src="img/old/Connasse.jpg"/>
+                                <a href='audio/conn/conn_1.mp3'><img src="img/old/Connasse.jpg"/></a>
                             </div>
                             <div class="bubble">
-                                <img src="img/old/cyprien.png"/>
+                                <a href='audio/cyp/cyp_1.mp3'><img src="img/old/cyprien.png"/></a>
                             </div>
                         </div>
                         <div id="footer">
