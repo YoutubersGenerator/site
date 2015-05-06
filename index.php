@@ -10,6 +10,22 @@
         <script type="text/javascript" src="inlineplayer.js"></script>
     </head>
     <body>
+        <?php
+            function search($nom){
+                try
+                {
+                    $bdd = new PDO('mysql:host=localhost;dbname=ytbgen;charset=utf8', 'root', '');
+                }
+                catch (Exception $e)
+                {
+                        die('Erreur : ' . $e->getMessage());
+                }
+                $search = $bdd->prepare("SELECT id FROM ytb WHERE nom = :nom");
+                $search -> execute(array('nom' => $nom));
+                $result = $search -> fetchAll();
+                return $result;
+            }
+        ?>
         <span id="s1"></span>
         <span id="s2"></span>
         <!-- La navigation -->
@@ -35,28 +51,28 @@
                         </div>
                         <div id="contentBubble">
                             <div class="bubble">
-                                <a href='audio/slg/slg_1.mp3'><img src="img/old/SLG.jpg"/></a>
+                                <a href='audio/slg/<?php $id=search('slg'); echo 'slg_'.$id[0]['id'].'.mp3' ?>'><img src="img/old/SLG.jpg"/></a>
                             </div>
                             <div class="bubble">
-                                <a href='audio/mip/mip_1.mp3'><img src="img/old/mip.jpg"/></a>
+                                <a href='audio/mip/<?php $id=search('mip'); echo 'mip_'.$id[0]['id'].'.mp3' ?>'><img src="img/old/mip.jpg"/></a>
                             </div>
                             <div class="bubble">
-                                <a href="audio/jdg/jdg_1.mp3"><img src="img/old/jdg.jpg"/></a>
+                                <a href="audio/jdg/<?php $id=search('jdg'); echo 'jdg_'.$id[0]['id'].'.mp3' ?>"><img src="img/old/jdg.jpg"/></a>
                             </div>
                             <div class="bubble">
-                                <a href='audio/ant/ant_1.mp3'><img src="img/old/antoine-daniel.jpg"/></a>
+                                <a href='audio/ant/<?php $id=search('ant'); echo 'ant_'.$id[0]['id'].'.mp3' ?>'><img src="img/old/antoine-daniel.jpg"/></a>
                             </div>
                             <div class="bubble">
-                                <a href='audio/ben/ben_1.mp3'><img src="img/old/benzai.png"/></a>
+                                <a href='audio/ben/<?php $id=search('ben'); echo 'ben_'.$id[0]['id'].'.mp3' ?>'><img src="img/old/benzai.png"/></a>
                             </div>
                             <div class="bubble">
-                                <a href='audio/bob/bob_1.mp3'><img src="img/old/BobLennon.png"/></a>
+                                <a href='audio/bob/<?php $id=search('bob'); echo 'bob_'.$id[0]['id'].'.mp3' ?>'><img src="img/old/BobLennon.png"/></a>
                             </div>
                             <div class="bubble">
-                                <a href='audio/cos/cos_1.mp3'><img src="img/old/Connasse.jpg"/></a>
+                                <a href='audio/cos/<?php $id=search('cos'); echo 'cos_'.$id[0]['id'].'.mp3' ?>'><img src="img/old/Connasse.jpg"/></a>
                             </div>
                             <div class="bubble">
-                                <a href='audio/cyp/cyp_1.mp3'><img src="img/old/cyprien.png"/></a>
+                                <a href='audio/cyp/<?php $id=search('cyp'); echo 'cyp_'.$id[0]['id'].'.mp3' ?>'><img src="img/old/cyprien.png"/></a>
                             </div>
                         </div>
                         <div id="footer">

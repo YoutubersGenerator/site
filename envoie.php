@@ -15,15 +15,14 @@
 		for($i=0; $i<count($files); $i++){
 			if(isset($files['name'][$i])){
 				$name = substr($files['name'][$i], 0, 3);
-				$chemin = 'audio/'.$name.'.mp3';
 				$id = attr_id($name);
+				$chemin = 'audio/'.$name.'/'.$name.'_'.$id.'.mp3';
 				$req = $bdd->prepare('INSERT INTO ytb(nom, id) VALUES(:nom, :id)');
 				$req->execute(array(
 					'nom' => $name,
 					'id' => $id
 				));
-
-				var_dump($chemin);
+				if(!file_exists('audio/'.$name.'/')) mkdir('audio/'.$name);
 				move_uploaded_file($_FILES['file']['tmp_name'][$i], $chemin);
 			}
 		}
@@ -35,4 +34,20 @@
 		}
 		return $l;
 	}
+
+	function search($nom){
+	    try
+	    {
+	        $bdd = new PDO('mysql:host=localhost;dbname=ytbgen;charset=utf8', 'root', '');
+	    }
+	    catch (Exception $e)
+	    {
+	            die('Erreur : ' . $e->getMessage());
+	    }
+	    $search = $bdd->prepare("SELECT id FROM ytb WHERE nom = :nom");
+        $search -> execute(array('nom' => $nom));
+        $result = $search -> fetchAll();
+	    return $result;
+	}
+	var_dump(search('slg'));
 	?>

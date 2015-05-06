@@ -91,12 +91,19 @@ body {
     border-left: 0px;
     border-right: 0px;
     height: 200px;
+    display: block;
 }
 
 .bubble:hover
 {
     margin-top: 42px;
     border-width: 5px;
+}
+
+#bubble p {
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
 }
 
 .overlay
