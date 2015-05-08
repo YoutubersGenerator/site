@@ -172,6 +172,37 @@ body {
 #s2:target ~ #wrap #slide1 { background-position: 50% 36%; }
 #s2:target ~ #wrap #slide2 { background-position: 50% 0%; }
 
+#menu
+{
+    background-color: black;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    width: 110px;   
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+#menu ul
+{
+    margin-right: 5px;
+    padding-left: 13px;
+}
+
+#menu li
+{
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+}
+
+ #menu ul li a 
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'geo';    
+}
 
 #content2
 {
