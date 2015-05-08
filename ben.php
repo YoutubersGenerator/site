@@ -1,12 +1,4 @@
-<?php 
-
-try {
-    $connexion = new PDO('mysql:host=localhost;dbname=fichesytbers;charset=utf8', 'root', '');
-    $connexion->exec("SET NAMES 'utf8'");
-} catch (PDOException $e) {
-    die ("Erreur MySQL : " . $e->getMessage());
-}
-?>
+<?php require('connexion_bdd.php'); ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,7 +16,7 @@ try {
                 <?php 
                     $query = "SELECT nom, duree, categorie, nbreVuesCumul, nbreVideos FROM fiche WHERE id=5";
                     $param = array();
-                    $req = $connexion->prepare($query);
+                    $req = $bdd->prepare($query);
                     $req->execute($param);
 
                     $info = $req->fetchALL();

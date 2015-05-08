@@ -4,12 +4,7 @@
 	<input type='submit' value='uploader'>
 </form>
 <?php
-	try {
-		$bdd = new PDO('mysql:host=localhost;dbname=ytbgen;charset=utf8', 'root', '');
-	}
-	catch (Exception $e){
-	        die('Erreur : ' . $e->getMessage());
-	}
+	require('connexion_bdd.php');
 	if(isset($_FILES['file'])){
 		$files = $_FILES['file'];
 		for($i=0; $i<count($files); $i++){
@@ -49,5 +44,4 @@
         $result = $search -> fetchAll();
 	    return $result;
 	}
-	var_dump(search('slg'));
 	?>

@@ -26,6 +26,7 @@ body {
     position: fixed;
     bottom: 5%;
     left: 0px;
+    width: 100%;
 }
 
 #wrap {

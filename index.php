@@ -12,14 +12,7 @@
     <body>
         <?php
             function search($nom){
-                try
-                {
-                    $bdd = new PDO('mysql:host=localhost;dbname=ytbgen;charset=utf8', 'root', '');
-                }
-                catch (Exception $e)
-                {
-                        die('Erreur : ' . $e->getMessage());
-                }
+                require('connexion_bdd.php');
                 $search = $bdd->prepare("SELECT id FROM ytb WHERE nom = :nom");
                 $search -> execute(array('nom' => $nom));
                 $result = $search -> fetchAll();
@@ -46,8 +39,10 @@
                     <div id="content">
                         <a href="#s1"><img src="img/return.png" alt="return" id="return"></a>
                         <div id='search'>
-                            <input type ='text' name='research' placeholder='recherche'>
-                            <input type='submit' value='Rechercher'>
+                            <form method="POST">
+                                <input type ='text' name='research' placeholder='recherche'>
+                                <input type='submit' value='Rechercher'>
+                            </form>
                         </div>
                         <div id="contentBubble">
                             <div class="bubble">
@@ -83,5 +78,17 @@
                 </div> <!-- /.slide_inside-->	     	
             </div> <!-- /#slide2 -->
         </div>
+        <?php 
+            if(isset($_POST['research'])){
+                
+                function search($nom){
+                    require('connexion_bdd.php');
+                    $search = $bdd->prepare("SELECT id FROM ytb WHERE nom = :nom");
+                    $search -> execute(array('nom' => $nom));
+                    $result = $search -> fetchAll();
+                    return $result;
+                }
+            }
+        ?>
     </body>
 </html>
