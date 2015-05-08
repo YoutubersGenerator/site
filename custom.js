@@ -8,20 +8,11 @@ $(document).ready(function(){
         jQuery(footer).css('display',"block");
         $('#footer').fadeIn("slow");
     });
-        $('#return').click(function(){
+    $('#return').click(function(){
         $('#bandeau').fadeIn("500");
         $('#nav').fadeIn("500");
         $('#return').fadeOut("500");
         jQuery(footer).css('display',"none")
         $('#footer').fadeOut("500");
     });
-});
-
-$('#test').click(function () {
-    document.getElementById('#audio').play();
-
-});
-
-$('#audio').on('ended', function() {
-  $('#audio').load();
 });

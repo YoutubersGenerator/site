@@ -80,13 +80,23 @@
         </div>
         <?php 
             if(isset($_POST['research'])){
-                
-                function search($nom){
-                    require('connexion_bdd.php');
-                    $search = $bdd->prepare("SELECT id FROM ytb WHERE nom = :nom");
-                    $search -> execute(array('nom' => $nom));
-                    $result = $search -> fetchAll();
-                    return $result;
+                $nom = substr($_POST['research'], 0, 3);
+                if ($_POST['research'] == 'slg' || stristr($_POST['research'], 'geek') != false) {
+                    header('location: slg.php');
+                } elseif ($_POST['research'] == 'jdg' || stristr($_POST['research'], 'grenier') != false) {
+                    header('location: jdg.php');
+                } elseif ($_POST['research'] == 'minutte papillon' || stristr($_POST['research'], 'minute') != false) {
+                    header('location: mip.php');
+                } elseif ($_POST['research'] == 'antoine daniel' || $_POST['research'] == 'wtc' || stristr($_POST['research'], 'cut') != false) {
+                    header('location: ant.php');
+                } elseif ($_POST['research'] == 'benzai' || stristr($_POST['research'], 'corner') != false) {
+                    header('location: ben.php');
+                } elseif ($_POST['research'] == 'bob lennon' || stristr($_POST['research'], 'bob') != false) {
+                    header('location: bob.php');
+                } elseif ($_POST['research'] == 'connasse' || stristr($_POST['research'], 'con') != false) {
+                    header('location: cos.php');
+                } elseif ($_POST['research'] == 'cyprien' || stristr($_POST['research'], 'cyp') != false) {
+                    header('location: cyp.php');
                 }
             }
         ?>
